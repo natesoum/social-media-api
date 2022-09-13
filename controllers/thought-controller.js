@@ -27,7 +27,7 @@ const thoughtController = {
       .select("-__v")
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          return res.status(404).json({ message: "No thought with this id!" });
+          return res.status(404).json({ message: "Unable to find thoughts with this id, try again!" });
         }
         res.json(dbThoughtData);
       })
@@ -68,7 +68,7 @@ const thoughtController = {
     })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: "No thought found with this id!" });
+          res.status(404).json({ message: "Unable to find thoughts with this id, try again!" });
           return;
         }
         res.json(dbThoughtData);
@@ -81,7 +81,7 @@ const thoughtController = {
     Thought.findOneAndDelete({ _id: params.id })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          return res.status(404).json({ message: "No thought with this id!" });
+          return res.status(404).json({ message: "Unable to find thoughts with this id, try again!" });
         }
 
         // remove thought id from user's `thoughts` field
@@ -111,7 +111,7 @@ const thoughtController = {
     )
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: "No thought with this id" });
+          res.status(404).json({ message: "Unable to find thoughts with this id, try again!" });
           return;
         }
         res.json(dbThoughtData);
