@@ -4,7 +4,7 @@
 
 This Social Network API was a challenge to test my skills of being able to CRUD with MongoDB & Mongoose. 
 The technologies I used were MongoDB, Mongoose & Express. 
-This is the back-end side of a Social Network app, if time is available. I would love to connect this with a front-end to make it a full stack app.
+This is the back-end of a Social Network app, if time is available. I would love to connect this with a front-end to make it a full stack app.
 In the meantime, Enjoy! 
 
 ## Demo 
